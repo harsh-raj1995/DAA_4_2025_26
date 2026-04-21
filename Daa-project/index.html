@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Queens Solver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <header>
+                <h1>N-Queens Game</h1>
+                <p class="subtitle">Place queens strategically and solve the puzzle!</p>
+            </header>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <label for="board-size">Board Size (N):</label>
+                    <input type="number" id="board-size" min="4" max="12" value="8">
+                </div>
+                
+                <div class="button-group">
+                    <button id="reset-btn" class="btn">Reset Board</button>
+                    <button id="check-btn" class="btn">Check Solution</button>
+                </div>
+                
+                <div id="message" class="message"></div>
+            </div>
+            <div id="chessboard" class="chessboard"></div>
+        </div>
+    </div>
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <h2>Congratulations!</h2>
+            <p>You successfully solved the N-Queens puzzle!</p>
+            <button id="play-again-btn" class="btn btn-success">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
